@@ -1,0 +1,120 @@
+body {
+  background: #5b2c28;
+}
+
+.card-container {
+  background: grey;
+  width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 10px 5px 10px #0000008f;
+}
+
+.image {
+  background-color: blue;
+  background-image: url("images/istockphoto-490241680-612x612.jpg");
+  background-size: cover;
+  height: 200px;
+
+  &:hover{
+    transform: scale(1.1);
+    background-size: 110%;
+  }
+}
+
+.content {
+  font-family: Jost, sans-serif;
+  background: white;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & span {
+    color: rgb(241 169 82);
+    font-family: Cambria, monospace;
+    font-size: 1rem;
+    margin: 0 0 20px;
+  }
+
+  & h1 {
+    margin: 0 0 15px;
+    font-weight: bold;
+  }
+
+  & p {
+    width: 300px;
+    text-align: center;
+    color: #858585;
+    font-weight: bold;
+  }
+}
+
+.stats {
+  display: flex;
+  height: 100px;
+  font-family: Jost, sans-serif;
+
+  & .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(11 9 9);
+    transition: background 0.5s;
+    background-color: white;
+    border-top: 1px solid #00000043;
+    
+
+    &:hover {
+      background: rgb(153 153 153);
+      cursor: pointer;
+    }
+
+    &.item-center {
+      border-left: 1px solid #00000043;
+      border-right: 1px solid #00000043;
+      border-top: 1px solid #00000043;
+      background-color: rgb(10 125 220);
+
+      &:hover {
+        background: rgb(25 47 148);
+        cursor: pointer;
+      }
+    }
+    
+
+    & .value {
+      font-size: 1.5rem;
+    }
+
+    & .text {
+      font-size: 1rem;
+    }
+    
+  }
+
+  & .item-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(11 9 9);
+    transition: background 0.5s;
+    background-color: rgb(246 255 0);
+    border-top: 1px solid #00000043;
+
+    & .value{
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      background: rgb(173 171 1);
+      cursor: pointer;
+    }
+  }
+}
